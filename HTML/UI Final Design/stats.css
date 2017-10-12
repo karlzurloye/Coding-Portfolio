@@ -1,0 +1,51 @@
+body {
+	margin: 0;
+	padding-top: 40px;
+	font-family: Raleway;
+	overflow-y: hidden; 
+}
+
+nav {
+	margin: 0;
+	padding: 0 40px;
+	overflow: hidden;
+	border-bottom: solid 1px grey;
+}
+
+nav * {
+	display: inline-block;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	width: 100%;
+}
+
+nav li {
+	padding: 5px 10px;
+	margin: 0 2px;
+	border: solid 1px grey;
+	border-bottom: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: aliceblue;
+}
+
+nav li:hover {
+	cursor:pointer;
+}
+
+#stats {
+    background-color: steelblue;
+    color:white;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+
+

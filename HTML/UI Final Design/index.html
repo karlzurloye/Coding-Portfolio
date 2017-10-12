@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title> Task Tracker </title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Amaranth|Bitter|Lora|Merriweather|Nunito|Open+Sans|Quattrocento|Quattrocento+Sans|Raleway|Signika|Source+Sans+Pro|Titillium+Web" rel="stylesheet">
+</head>
+    
+<body onload="checkCookie()">
+    <nav>
+        <ul>
+            <li id="today-tasks" style="background-color:steelblue; color:white"><a href="index.html">Due Today</a></li>
+            <li id="week-tasks"><a href="thisweek.html">Due this Week</a></li>
+            <li id="all-tasks"><a href="alltasks.html">All Tasks</a></li>
+            <li id="completed-tasks"><a href="completedtasks.html">Completed Tasks</a></li>
+            <li id="stats"><a href="stat.html">Stats</a></li>
+        </ul>
+    </nav>
+    <div id="task_table">
+        <table id="mytable">
+            <thead>
+                <tr>
+                    <th>Done?</th>
+                    <th>Task</th>
+                    <th>Time Spent</th>
+                    <th>Expected Duration</th>
+                    <th>Deadline</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tasks">
+                <!--<tr>
+                    <td><input type="checkbox" value="Not_done" onclick="mark_as_done()"></td>
+                    <td>History Paper</td>
+                    <td>47 minutes</td>
+                    <td>2.5 hours</td>
+                    <td>2/27/17, 11:59pm</td>
+                    <td id="status"> ► </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="Not_done"></td>
+                    <td>Reading Assignment</td>
+                    <td>0 minutes</td>
+                    <td>1.5 hours</td>
+                    <td>2/27/17, 11:59pm</td>
+                    <td id="statues"> ► </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" value="Not_done"></td>
+                    <td>Design Interface</td>
+                    <td>15 minutes</td>
+                    <td>3 hours</td>
+                    <td>2/27/17, 11:59pm</td>
+                    <td id="ugh"> ►  </td><!--&#10074; &#10074;
+                </tr> -->
+                <tr>
+                   <td id="add_new"><button id="add_new"><strong>+</strong></button></td><!-- onclick="alert('you are trying to add a new task at '+ Date.now())"-->
+                </tr>
+            </tbody>
+        </table>
+        
+        <!--p id="test-p">test</p-->
+
+        <p id="confirm-message"></p>
+        
+        <img id="celly" src="celebration.gif">
+        
+    </div>
+</body>
+</html>
